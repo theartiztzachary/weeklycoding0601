@@ -1,0 +1,32 @@
+a) Create a function that determines whether a string is a valid hex code.
+
+A hex code must begin with a pound key # and is exactly 6 characters in length. Each character must be a digit from 0-9 or an alphabetic character from A-F. All alphabetic characters may be uppercase or lowercase.
+
+Examples:
+IsValidHexCode("#CD5C5C") ➞ true
+
+IsValidHexCode("#EAECEE") ➞ true
+
+IsValidHexCode("#eaecee") ➞ true
+
+IsValidHexCode("#CD5C58C") ➞ false
+// Length exceeds 6
+
+IsValidHexCode("#CD5C5Z") ➞ false
+// Not all alphabetic characters in A-F
+
+IsValidHexCode("#CD5C&C") ➞ false
+// Contains unacceptable character
+
+IsValidHexCode("CD5C5C") ➞ false
+// Missing #
+
+b) Given an integer, create a function that returns the next prime. If the number is prime, return the number itself.
+
+Examples:
+NextPrime(12) ➞ 13
+
+NextPrime(24) ➞ 29
+
+NextPrime(11) ➞ 11
+// 11 is a prime, so we return the number itself.
